@@ -3,6 +3,9 @@ import { useNavigate } from "react-router-dom"
 import * as Yup from "yup"
 import Alerta from "./Alerta"
 
+const server = import.meta.env.VITE_API_URL
+
+
 const Formulario = ({cliente, cargando}) => { //traigo cliente de EditarCliente
 
     const navigate = useNavigate()
@@ -31,7 +34,7 @@ const Formulario = ({cliente, cargando}) => { //traigo cliente de EditarCliente
             let respuesta   //toma los valores del if o del else
             if(cliente.id) {
                 //Editar registro
-                const url = `http://localhost:4000/clientes/${cliente.id}`
+                const url = `${server}/${cliente.id}`
                 respuesta = await fetch(url, {    //envia los datos del formulario al server
                     method: "PUT",
                     body: JSON.stringify(valores),
@@ -39,7 +42,7 @@ const Formulario = ({cliente, cargando}) => { //traigo cliente de EditarCliente
                 })
             } else {
                 //Nuevo registro
-                const url = "http://localhost:4000/clientes"
+                const url = server
                 respuesta = await fetch(url, {    //envia los datos del formulario al server
                     method: "POST",
                     body: JSON.stringify(valores),

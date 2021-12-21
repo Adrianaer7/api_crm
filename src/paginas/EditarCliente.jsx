@@ -2,6 +2,10 @@ import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
 import Formulario from "../components/Formulario"
 import Spinner from "../components/Spinner"
+
+const server = import.meta.env.VITE_API_URL
+
+
 const EditarCliente = () => {
 
     const [cliente, setCliente] = useState({})
@@ -12,7 +16,7 @@ const EditarCliente = () => {
     useEffect(() => {
         const obtenerClienteAPI = async () => {
             try {
-                const url = `http://localhost:4000/clientes/${id}`
+                const url = `${server}/${id}`
                 const respuesta = await fetch(url)
                 const resultado = await respuesta.json()
                 setCliente(resultado)

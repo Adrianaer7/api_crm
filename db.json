@@ -1,3 +1,28 @@
 {
-  "clientes": []
+  "clientes": [
+    {
+      "nombre": "asd",
+      "empresa": "asdasd",
+      "email": "asdasd@asdas.com",
+      "telefono": "2323",
+      "notas": "asdasd",
+      "id": 1
+    },
+    {
+      "nombre": "Adrian1",
+      "empresa": "Adrian1",
+      "email": "adrian@goma.com",
+      "telefono": "2323",
+      "notas": "asdasd",
+      "id": 2
+    },
+    {
+      "nombre": "Adrian2",
+      "empresa": "adrian2",
+      "email": "asd@asd.com",
+      "telefono": "2323",
+      "notas": "asdasd",
+      "id": 3
+    }
+  ]
 }
