@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom"
 import * as Yup from "yup"
 import Alerta from "./Alerta"
 
+//importo la url que está en la variable de entorno. Si ejecuto npm run dev, toma localhost. Si ejecuto npm run preview, toma la de my-json-server
 const server = import.meta.env.VITE_API_URL
 
 
