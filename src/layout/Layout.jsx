@@ -33,12 +33,12 @@ const Layout = () => {
                 <h2 className="text-white text-4xl font-black text-center">CRM - Clientes</h2>
                 <nav className="mt-10 h-3/6">
                     <Link 
-                        className={`${urlActual === "/clientes" ? "bg-blue-300 bg-opacity-10 rounded-md  text-white" : "text-white"} text-2xl block p-2 mt-2 hover:text-blue-300`} 
-                        to="/clientes">Clientes
+                        className={`${urlActual === "/" ? "bg-blue-300 bg-opacity-10 rounded-md  text-white" : "text-white"} text-2xl block p-2 mt-2 hover:text-blue-300`} 
+                        to="/">Clientes
                     </Link>
                     <Link 
-                        className={`${urlActual === "/clientes/nuevo" ? "bg-blue-300 bg-opacity-10 rounded-md  text-white" : "text-white"} text-2xl block p-2 mt-2 hover:text-blue-300`} 
-                        to="/clientes/nuevo">Nuevos Clientes
+                        className={`${urlActual === "/nuevo" ? "bg-blue-300 bg-opacity-10 rounded-md  text-white" : "text-white"} text-2xl block p-2 mt-2 hover:text-blue-300`} 
+                        to="/nuevo">Nuevos Clientes
                     </Link>
                 </nav>
 

@@ -51,7 +51,7 @@ const Formulario = ({cliente, cargando}) => { //traigo cliente de EditarCliente
                 })
             }
             await respuesta.json()
-            navigate("/clientes")   //luego de enviar los datos, redirecciono al cliente
+            navigate("/")   //luego de enviar los datos, redirecciono al cliente
 
         } catch (error) {
             console.log(error)

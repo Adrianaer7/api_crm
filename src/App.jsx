@@ -11,7 +11,7 @@ function App() {
     return (
     <BrowserRouter>
       <Routes>
-        <Route path="/clientes" element={<Layout/>}> {/*siempre se va a mostrar el componente layout cuando entremos a /clientes */}
+        <Route path="/" element={<Layout/>}> {/*siempre se va a mostrar el componente layout cuando entremos a /clientes */}
           <Route index element={<Inicio/>}/> {/*cuando vaya a /clientes se va a cargar el componente layout + el componente inicio */}
           <Route path="nuevo" element={<NuevoCliente/>} /> {/*con path añado una ruta a /clientes. Cuando vaya a /clientes/nuevo va a mostrar el componente Layout + NuevoCliente */}
           <Route path="editar/:id" element={<EditarCliente/>} />
